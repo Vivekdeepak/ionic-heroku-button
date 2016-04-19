@@ -20,7 +20,7 @@ app.listen(app.get('port'), function () {
 });
 
 var pg = require('pg');
-var connectionString = "postgres://lfzauzjimnjgkc:YIAibDcidnwKxHiWDDK8p1qvRd@ec2-54-163-247-73.compute-1.amazonaws.com:5432/d7054ihui87aec"
+var connectionString = "databaseurl";
 pg.connect(connectionString, function(err, client, done) {
   client.query('SELECT * FROM salesforcedevorg.position__c', function(err, result) {
     done();
